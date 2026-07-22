@@ -1,0 +1,48 @@
+body{
+    background-color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.carta{
+    background-color: white;
+    height: 600px;
+    width: 800px;
+    border-radius: 2pc;
+}
+.title{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    background-color: rgb(85, 85, 206);
+    height: 80px;
+    border-top-left-radius: 2pc;
+    border-top-right-radius: 2pc;
+}
+.info{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.buttons{
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-around;
+}
+.b1{
+    background-color: rgb(118, 168, 118);
+    color: white;
+    height: 50px;
+    width: 250px;
+    border-radius: 2pc;
+}
+.input{
+    margin-top: 60px;
+    display: flex;
+    justify-content: space-around;
+}
+.destruccion{
+    margin-top: 100px;
+    text-align: center;
+}

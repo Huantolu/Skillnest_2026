@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora Flask</title>
+</head>
+<body>
+    <h1>Calculadora</h1>
+    <p>Haz click en un ejemplo. Puedes despues cambiar los numeros en la URL de tu navegador</p>
+
+    <ul>
+        <li><a href="/suma/67/67">67 + 67</a></li>
+        <li><a href="/resta/67/41">67 - 41</a></li>
+        <li><a href="/multiplicacion/67/67">67 * 67</a></li>
+        <li><a href="/division/67/41">67 / 41</a></li>
+        <li><a href="/no_existe">Ruta no existente</a></li>
+    </ul>
+    <p>Aqui una imagen del fantasmin bailando</p>
+    <img src="{{ url_for('static', filename='gato_elegante_sigma.jpg') }}" alt="">
+    <a href="https://www.youtube.com/@MoMoLaDinastia">El mejor canal del universo</a>
+</body>
+</html

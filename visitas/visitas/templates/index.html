@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contador de Visitas</title>
+    <link rel="stylesheet" href="../static/cstyles.css">
+</head>
+<body>
+    <div class="carta">
+        <div class="title">
+            <h1>Contador de Visitas</h1>
+        </div>
+        <div class="info">
+            <h2>Visitas: {{ visitas }}</h2>
+            <h3>Reinicios realizados: {{ reinicios }}</h3>
+        </div>
+        <hr>
+        <div class="buttons">
+            <form action="/sumar_dos" method="POST">
+                <button class="b1">Agregar +2 visitas</button>
+            </form>
+            <form action="/reiniciar" method="POST">
+                <button class="b1">Reiniciar contador</button>
+            </form>
+        </div>
+        <div class="input">
+            <form action="/sumar_personalizado" method="POST">
+                <label>Agregar visitas:</label>
+                <input type="number" name="numero" required>
+                <button>Sumar</button>
+            </form>
+        </div>
+        <div class="destruccion">
+            <a href="/destruir_sesion">
+                Destruir sesión
+            </a>
+        </div>
+    </div>
+</body>
+</html>
